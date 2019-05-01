@@ -6,18 +6,22 @@ clean:
 	rm -rf .build
 
 test-mac: clean
-	echo "test-mac" | tee -a ${LOGFILE}
+	echo "\ntest-mac" | tee -a ${LOGFILE}
 	swift run -c release | tee -a ${LOGFILE}
 
 test-linux-5.0.1: clean
-	echo "test-linux-5.0.1" | tee -a ${LOGFILE}
+	echo "\ntest-linux-5.0.1" | tee -a ${LOGFILE}
 	${DRUN} swift:5.0.1 swift run -c release | tee -a ${LOGFILE}
 
 test-linux-5.0: clean
-	echo "test-linux-5.0" | tee -a ${LOGFILE}
+	echo "\ntest-linux-5.0" | tee -a ${LOGFILE}
 	${DRUN} swift:5.0 swift run -c release | tee -a ${LOGFILE}
 
-reset-log:
-	rm ${LOGFILE}
+test-linux-4.2.1: clean
+	echo "\ntest-linux-4.2.1" | tee -a ${LOGFILE}
+	${DRUN} swift:4.2.1 swift run -c release | tee -a ${LOGFILE}
 
-test: reset-log test-mac test-linux-5.0.1 test-linux-5.0
+reset-log:
+	rm -f ${LOGFILE}
+
+test: reset-log test-mac test-linux-5.0.1 test-linux-5.0 test-linux-4.2.1
