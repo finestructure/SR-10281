@@ -2,7 +2,7 @@
 test-mac
 Launching ...
 Sending request ...
-<NSHTTPURLResponse: 0x7f9205ebcc10> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+<NSHTTPURLResponse: 0x7fee9f0a3d50> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
     "Content-Length" =     (
         201
     );
@@ -10,7 +10,7 @@ Sending request ...
         "application/problem+json"
     );
     Date =     (
-        "Wed, 01 May 2019 09:32:14 GMT"
+        "Wed, 01 May 2019 09:32:59 GMT"
     );
     Server =     (
         nginx
@@ -37,29 +37,30 @@ test-linux-5.0
 Launching ...
 Sending request ...
 none
-<HTTPURLResponse 0x00007f9aa0000bd0> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
+<HTTPURLResponse 0x00007f74940da6e0> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
    "Content-Type" = "application/problem+json";
-   "Date" = Wed, 01 May 2019 09:32:22 GMT;
    "Access-Control-Allow-Credentials" = true;
-   "Connection" = keep-alive;
-   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
-   "Server" = nginx;
-   "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
    "Content-Length" = 196;
+   "Server" = nginx;
+   "Connection" = keep-alive;
+   "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
+   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
+   "Date" = Wed, 01 May 2019 09:33:06 GMT;
 } }
+Fatal error: Trying to remove task, but it's not in the registry.: file /home/buildnode/jenkins/workspace/oss-swift-5.0-package-linux-ubuntu-18_04/swift-corelibs-foundation/Foundation/URLSession/TaskRegistry.swift, line 76
 
 test-linux-4.2.1
 Compile Swift Module 'SR_10281' (1 sources)
 Linking ./.build/x86_64-unknown-linux/release/SR-10281
 Launching ...
 Sending request ...
-<HTTPURLResponse 0x00007f821c0096e0> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
+<HTTPURLResponse 0x00007f597c003950> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
+   "Date" = Wed, 01 May 2019 09:33:10 GMT;
+   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
+   "Server" = nginx;
    "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
    "Access-Control-Allow-Credentials" = true;
-   "Date" = Wed, 01 May 2019 09:32:28 GMT;
-   "Content-Length" = 196;
-   "Server" = nginx;
-   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
    "Content-Type" = "application/problem+json";
    "Connection" = keep-alive;
+   "Content-Length" = 196;
 } }
