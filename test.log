@@ -1,8 +1,10 @@
 
 test-mac
+[1/2] Compiling Swift Module 'SR_10281' (1 sources)
+[2/2] Linking ./.build/x86_64-apple-macosx/release/SR-10281
 Launching ...
 Sending request ...
-<NSHTTPURLResponse: 0x7fee9f0a3d50> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+<NSHTTPURLResponse: 0x7fc7db208b20> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
     "Content-Length" =     (
         201
     );
@@ -10,7 +12,7 @@ Sending request ...
         "application/problem+json"
     );
     Date =     (
-        "Wed, 01 May 2019 09:32:59 GMT"
+        "Thu, 02 May 2019 08:54:58 GMT"
     );
     Server =     (
         nginx
@@ -27,40 +29,82 @@ Sending request ...
 } }
 
 test-linux-5.0.1
-[2K[1/2] Compiling Swift Module 'SR_10281' (1 sources)[2K[2/2] Linking ./.build/x86_64-unknown-linux/release/SR-10281
 Launching ...
 Sending request ...
-none
-
-test-linux-5.0
-[2K[1/2] Compiling Swift Module 'SR_10281' (1 sources)[2K[2/2] Linking ./.build/x86_64-unknown-linux/release/SR-10281
-Launching ...
-Sending request ...
-none
-<HTTPURLResponse 0x00007f74940da6e0> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
-   "Content-Type" = "application/problem+json";
-   "Access-Control-Allow-Credentials" = true;
-   "Content-Length" = 196;
-   "Server" = nginx;
-   "Connection" = keep-alive;
-   "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
-   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
-   "Date" = Wed, 01 May 2019 09:33:06 GMT;
+<NSHTTPURLResponse: 0x7fb0fb8215e0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+    "Content-Length" =     (
+        201
+    );
+    "Content-Type" =     (
+        "application/problem+json"
+    );
+    Date =     (
+        "Thu, 02 May 2019 08:55:00 GMT"
+    );
+    Server =     (
+        nginx
+    );
+    "access-control-allow-credentials" =     (
+        true
+    );
+    "access-control-allow-headers" =     (
+        "Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With"
+    );
+    "access-control-allow-methods" =     (
+        "GET, POST, PUT, DELETE, OPTIONS"
+    );
 } }
-Fatal error: Trying to remove task, but it's not in the registry.: file /home/buildnode/jenkins/workspace/oss-swift-5.0-package-linux-ubuntu-18_04/swift-corelibs-foundation/Foundation/URLSession/TaskRegistry.swift, line 76
+
+test-linux-5.0.0
+Launching ...
+Sending request ...
+<NSHTTPURLResponse: 0x7fe52d1030d0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+    "Content-Length" =     (
+        201
+    );
+    "Content-Type" =     (
+        "application/problem+json"
+    );
+    Date =     (
+        "Thu, 02 May 2019 08:55:03 GMT"
+    );
+    Server =     (
+        nginx
+    );
+    "access-control-allow-credentials" =     (
+        true
+    );
+    "access-control-allow-headers" =     (
+        "Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With"
+    );
+    "access-control-allow-methods" =     (
+        "GET, POST, PUT, DELETE, OPTIONS"
+    );
+} }
 
 test-linux-4.2.1
-Compile Swift Module 'SR_10281' (1 sources)
-Linking ./.build/x86_64-unknown-linux/release/SR-10281
 Launching ...
 Sending request ...
-<HTTPURLResponse 0x00007f597c003950> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
-   "Date" = Wed, 01 May 2019 09:33:10 GMT;
-   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
-   "Server" = nginx;
-   "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
-   "Access-Control-Allow-Credentials" = true;
-   "Content-Type" = "application/problem+json";
-   "Connection" = keep-alive;
-   "Content-Length" = 196;
+<NSHTTPURLResponse: 0x7fb6f24257c0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+    "Content-Length" =     (
+        201
+    );
+    "Content-Type" =     (
+        "application/problem+json"
+    );
+    Date =     (
+        "Thu, 02 May 2019 08:55:05 GMT"
+    );
+    Server =     (
+        nginx
+    );
+    "access-control-allow-credentials" =     (
+        true
+    );
+    "access-control-allow-headers" =     (
+        "Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With"
+    );
+    "access-control-allow-methods" =     (
+        "GET, POST, PUT, DELETE, OPTIONS"
+    );
 } }
