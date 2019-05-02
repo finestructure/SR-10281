@@ -6,21 +6,17 @@ clean:
 	rm -rf .build
 
 test-mac: clean
-	echo "\ntest-mac" 2>&1 | tee -a ${LOGFILE}
-	swift --version && swift run -c release 2>&1 | tee -a ${LOGFILE}
+	(swift --version && swift run -c release) 2>&1 | tee -a ${LOGFILE}
 
 test-linux-5.0.1: clean
-	echo "\ntest-linux-5.0.1" 2>&1 | tee -a ${LOGFILE}
-	${DRUN} swift:5.0.1 swift --version && swift run -c release 2>&1 | tee -a ${LOGFILE}
+	(${DRUN} swift:5.0.1 swift --version && swift run -c release) 2>&1 | tee -a ${LOGFILE}
 
 test-linux-5.0.0: clean
-	echo "\ntest-linux-5.0.0" 2>&1 | tee -a ${LOGFILE}
 	# swift@sha256:ccaef3f936bd3cabd184a0caf7c2455eb861182b51e77970be4be72bea116a26 is what used to be swift:5.0
-	${DRUN} swift@sha256:ccaef3f936bd3cabd184a0caf7c2455eb861182b51e77970be4be72bea116a26 swift --version && swift run -c release 2>&1 | tee -a ${LOGFILE}
+	(${DRUN} swift@sha256:ccaef3f936bd3cabd184a0caf7c2455eb861182b51e77970be4be72bea116a26 swift --version && swift run -c release) 2>&1 | tee -a ${LOGFILE}
 
 test-linux-4.2.1: clean
-	echo "\ntest-linux-4.2.1" 2>&1 | tee -a ${LOGFILE}
-	${DRUN} swift:4.2.1 swift --version && swift run -c release 2>&1 | tee -a ${LOGFILE}
+	(${DRUN} swift:4.2.1 swift --version && swift run -c release) 2>&1 | tee -a ${LOGFILE}
 
 reset-log:
 	rm -f ${LOGFILE}

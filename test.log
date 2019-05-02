@@ -1,10 +1,10 @@
-
-test-mac
+Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)
+Target: x86_64-apple-darwin18.5.0
 [1/2] Compiling Swift Module 'SR_10281' (1 sources)
 [2/2] Linking ./.build/x86_64-apple-macosx/release/SR-10281
 Launching ...
 Sending request ...
-<NSHTTPURLResponse: 0x7fc7db208b20> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+<NSHTTPURLResponse: 0x7fc00c053fd0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
     "Content-Length" =     (
         201
     );
@@ -12,7 +12,7 @@ Sending request ...
         "application/problem+json"
     );
     Date =     (
-        "Thu, 02 May 2019 08:54:58 GMT"
+        "Thu, 02 May 2019 09:06:50 GMT"
     );
     Server =     (
         nginx
@@ -27,11 +27,11 @@ Sending request ...
         "GET, POST, PUT, DELETE, OPTIONS"
     );
 } }
-
-test-linux-5.0.1
+Swift version 5.0.1 (swift-5.0.1-RELEASE)
+Target: x86_64-unknown-linux-gnu
 Launching ...
 Sending request ...
-<NSHTTPURLResponse: 0x7fb0fb8215e0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+<NSHTTPURLResponse: 0x7fa6b263e640> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
     "Content-Length" =     (
         201
     );
@@ -39,7 +39,7 @@ Sending request ...
         "application/problem+json"
     );
     Date =     (
-        "Thu, 02 May 2019 08:55:00 GMT"
+        "Thu, 02 May 2019 09:06:51 GMT"
     );
     Server =     (
         nginx
@@ -54,11 +54,11 @@ Sending request ...
         "GET, POST, PUT, DELETE, OPTIONS"
     );
 } }
-
-test-linux-5.0.0
+Swift version 5.0 (swift-5.0-RELEASE)
+Target: x86_64-unknown-linux-gnu
 Launching ...
 Sending request ...
-<NSHTTPURLResponse: 0x7fe52d1030d0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+<NSHTTPURLResponse: 0x7fb8cac007f0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
     "Content-Length" =     (
         201
     );
@@ -66,7 +66,7 @@ Sending request ...
         "application/problem+json"
     );
     Date =     (
-        "Thu, 02 May 2019 08:55:03 GMT"
+        "Thu, 02 May 2019 09:06:53 GMT"
     );
     Server =     (
         nginx
@@ -81,11 +81,11 @@ Sending request ...
         "GET, POST, PUT, DELETE, OPTIONS"
     );
 } }
-
-test-linux-4.2.1
+Swift version 4.2.1 (swift-4.2.1-RELEASE)
+Target: x86_64-unknown-linux-gnu
 Launching ...
 Sending request ...
-<NSHTTPURLResponse: 0x7fb6f24257c0> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+<NSHTTPURLResponse: 0x7fdd56f05f00> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
     "Content-Length" =     (
         201
     );
@@ -93,7 +93,7 @@ Sending request ...
         "application/problem+json"
     );
     Date =     (
-        "Thu, 02 May 2019 08:55:05 GMT"
+        "Thu, 02 May 2019 09:06:55 GMT"
     );
     Server =     (
         nginx
