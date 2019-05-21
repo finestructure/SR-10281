@@ -2,7 +2,7 @@
 
 LOGFILE=test.log
 DRUN="docker run --rm -it -v ${PWD}:/host -w /host"
-IMAGES="swift:5.0.1 swift@sha256:ccaef3f936bd3cabd184a0caf7c2455eb861182b51e77970be4be72bea116a26 swift:4.2.1"
+IMAGES="swift:5.0.1 swift@sha256:ccaef3f936bd3cabd184a0caf7c2455eb861182b51e77970be4be72bea116a26 swift:4.2.1 finestructure/swift:swift-DEVELOPMENT-SNAPSHOT-2019-05-19-a"
 
 rm -f ${LOGFILE}
 
