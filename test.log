@@ -5,7 +5,7 @@ Target: x86_64-apple-darwin18.6.0
 [2/2] Linking ./.build/x86_64-apple-macosx/release/SR-10281
 Launching ...
 Sending request ...
-<NSHTTPURLResponse: 0x7fc25750c020> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
+<NSHTTPURLResponse: 0x7fee2e900850> { URL: https://dev.vbox.space/api/v1/contract } { Status Code: 401, Headers {
     "Content-Length" =     (
         201
     );
@@ -13,7 +13,7 @@ Sending request ...
         "application/problem+json"
     );
     Date =     (
-        "Tue, 21 May 2019 06:35:13 GMT"
+        "Mon, 03 Jun 2019 08:53:21 GMT"
     );
     Server =     (
         nginx
@@ -42,6 +42,17 @@ Target: x86_64-unknown-linux-gnu
 Launching ...
 Sending request ...
 none
+<HTTPURLResponse 0x00007f4a280044e0> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
+   "Content-Length" = 196;
+   "Content-Type" = "application/problem+json";
+   "Date" = Mon, 03 Jun 2019 08:53:33 GMT;
+   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
+   "Access-Control-Allow-Credentials" = true;
+   "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
+   "Server" = nginx;
+   "Connection" = keep-alive;
+} }
+Fatal error: Trying to remove task, but it's not in the registry.: file /home/buildnode/jenkins/workspace/oss-swift-5.0-package-linux-ubuntu-18_04/swift-corelibs-foundation/Foundation/URLSession/TaskRegistry.swift, line 76
 
 Swift version 4.2.1 (swift-4.2.1-RELEASE)
 Target: x86_64-unknown-linux-gnu
@@ -49,20 +60,29 @@ Compile Swift Module 'SR_10281' (1 sources)
 Linking ./.build/x86_64-unknown-linux/release/SR-10281
 Launching ...
 Sending request ...
-<HTTPURLResponse 0x00007f94540e5650> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
+<HTTPURLResponse 0x00007f4b440e54c0> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
+   "Content-Type" = "application/problem+json";
    "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
-   "Date" = Tue, 21 May 2019 06:35:32 GMT;
+   "Date" = Mon, 03 Jun 2019 08:53:39 GMT;
    "Server" = nginx;
    "Access-Control-Allow-Credentials" = true;
-   "Content-Type" = "application/problem+json";
+   "Connection" = keep-alive;
    "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
    "Content-Length" = 196;
-   "Connection" = keep-alive;
 } }
 
-Swift version 5.0.1 (swift-5.0.1-RELEASE)
+Swift version 5.1-dev (LLVM 082dec2e22, Swift 5ca038368d)
 Target: x86_64-unknown-linux-gnu
-[2K[1/2] Compiling Swift Module 'SR_10281' (1 sources)[2K[2/2] Linking ./.build/x86_64-unknown-linux/release/SR-10281
+[2K[1/2] Compiling SR-10281 main.swift[2K[2/2] Linking SR-10281[2K[2/2] Linking SR-10281
 Launching ...
 Sending request ...
-none
+<HTTPURLResponse 0x00007f318c003ec0> { URL: https://dev.vbox.space/api/v1/contract }{ status: 401, headers {
+   "Access-Control-Allow-Methods" = GET, POST, PUT, DELETE, OPTIONS;
+   "Connection" = keep-alive;
+   "Content-Length" = 196;
+   "Access-Control-Allow-Credentials" = true;
+   "Access-Control-Allow-Headers" = Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, If-None-Match, Keep-Alive, Origin, User-Agent, X-Requested-With;
+   "Date" = Mon, 03 Jun 2019 08:53:45 GMT;
+   "Content-Type" = "application/problem+json";
+   "Server" = nginx;
+} }
